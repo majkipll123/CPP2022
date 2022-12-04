@@ -1,0 +1,52 @@
+void fun (void)
+{}
+int main()
+{fun();}
+dziala ale na odwrot nie dziala
+chyba z zrobimy tak
+void fun(); --> zapis w funckje.h
+int main()
+{fun();}
+void fun (void)
+{}
+kompilowanie kilku plokow na raz g++ main.cpp funckje.cpp
+i teraz zeby w main dzialalo z innego pliku to trzeba dac prototypy do pliku np funkcje.h i wtedy
+void fun(); --> zapis w funckje.h
+#include "funkcje.h"
+int main()
+{fun();}
+void fun (void)
+{}
+
+
+
+
+void fun2(int i)
+{cout<<i;}
+int main()
+{fun2(4)}
+oid fun2(int i, float j)
+{cout<<i;}
+int main()
+{fun2(4,50.01)}
+fun3(4);int fun3(int i)
+{return 5*i;}
+
+cout<<fun3(5)
+cout <<fun3(fun3(5)); >odda 50
+int fun()
+{
+...
+fun();
+...
+}
+int fun(int i)
+{
+if (i==0) return 1;
+else return silnia();
+}
+
+
+
+
+

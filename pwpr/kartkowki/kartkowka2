@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout<<"podaj x";
+cin>>x;
+if (x<5)
+{
+if (x<=5)
+{
+cout<<"git"
+}
+else
+{cout<<"niegit";}
+}
+else
+{cout<<"niegit";}
+return 0;}

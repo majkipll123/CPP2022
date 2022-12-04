@@ -1,0 +1,9 @@
+uwaga na laczenie bibliotek using name std poniewaz mmoga byc 2cout z 2 innych biblitek i moze wystapic konflikt 
+kody ansi 
+kolorowanie i formatowanie tekstu//grafika i proste animacje 
+kod ansi wystepuje wewnatrz lancucha znakow 
+informacje na temat kodow ansi na wikipedii?? 
+csi = \x1b n = [(dowolna liczba) m - kolorowanie  
+kod ktory przenosi w dowlne miejsce 
+csi n(wiersz) ; m(kolumna) H
+\x1b[5;4H 

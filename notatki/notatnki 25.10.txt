@@ -1,0 +1,7 @@
+for(float x = 0 ; x<2*M_PI; x=x+0.01
+{
+cout << x << "\t" << sin(x)<<endl; 
+
+}
+
+gnuplot qt?? 

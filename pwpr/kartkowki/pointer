@@ -1,0 +1,33 @@
+notatki pointery
+kiedy zapisujemy zmienna zajmuje ona miejsce w pamieci i kiedy tworzymy zmienna to jej nazwa wskazuje na jej adres
+czemu wskazniki sa potrzebne
+int zmienna=5;
+funkcja ktora zeruje zmienna
+fun(zmienna)
+{cout<<zmienna;}       i ze to ma dac nam zero
+void zeruj(int i)
+{i=0}
+DLA JEZYKA C
+int zmienna=5;
+zeruj2(&zmienna);  sa 3 typy przekazywania danych przekazywanie danych poprzed wskaznik i adres i referencje
+cout<<zmienna;
+void zeruj2(int *adres)
+{
+(*adres)=0
+}
+int tab[50];
+tab[5]=6;
+tab=> wskaznik na 1 element
+przekazywanie tablic do funkcji odbywa sie z gwiazdka
+zeruj2(tab);=> wyzeruje 1 komurke
+zeruj2(&tab[5]) wyzeruje 5 komurke
+jezyk cpp
+zeruj3( int &i) 3 sposob przekazywania danych poprzez referencje
+{
+i=0
+}
+
+int zmienna=5;
+zeruj3( zmienna);
+cout<<zmienna;
+

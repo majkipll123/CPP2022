@@ -1,0 +1,40 @@
+juz mozna robic ciekawe rzeczy
+programowanie
+
+cout a
+cout b
+A
+B
+wiadomka
+animacja
+rozkaz ktory wiadomo co
+animacje tego typu
+usleep
+sleep
+klatka(1);
+funkcja();
+klatka(2);
+funkcja();
+klatka(3);
+funkcja();
+program klatka
+void klatka(int i)
+{
+cout<<"\x1b[JJ";
+    if(i==0)
+        {
+        cout<<"siala"
+        }
+    if(i==1)
+        {
+        cout<<"baba";
+        }
+    if(i==2)
+        {
+        cout<<"mak";
+        }
+}
+void czekaj()
+{
+    usleep(10000)
+}
