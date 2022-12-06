@@ -2,6 +2,9 @@
 using namespace std;
 int zmienna=5;
 
+
+
+
 cout<<zmienna;
 void zeruj2(int *adres)
 {
