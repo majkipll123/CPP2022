@@ -1,7 +1,7 @@
 #include <chrono>
 #include <thread>//dwie biblioteki do dluzszego sleepa
 
-#include <Windows.h> //zakomentuj na linux
+//#include <Windows.h> //zakomentuj na linux
 #include <unistd.h> //<stdio.h>
 #include <conio.h> //console input output
 #include <iostream>
@@ -76,7 +76,7 @@ void input()
 {
     if(_kbhit()) //zwraca 1 jezeli klawisz jest wcisniety a zwraca 0 jezeli nic nie klikasz taki bool
     {
-        switch(_getch())
+        switch(getch())
         {
     case 'a':
         dir = LEFT;
