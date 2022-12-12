@@ -4,32 +4,34 @@
 #include <fstream>
 using namespace std;
 int x,b;
+float srednia,suma,a;
+void zapisz(float b)
+{
+    ofstream zapis;
+    srand(time(NULL));
+    float suma=0;
+    for (int i=0; i<b; i++)
+    {
+        a= rand()/float(RAND_MAX);
+        suma=suma+a;
+
+    }
+    srednia =suma/b;
+    zapis.open("wynik.dat",std::ios_base::app);
+    zapis<<b<<" "<<srednia<<endl;
+    zapis.close();
+
+
+}
 int main()
 {
-
-    cout<<"z ilu losowych liczb od 0 do 1 chcesz policzyc srednia? "<<endl;
-
-   // cin>>x;
-
-    float suma,a;
-    cin>>x;
-    srand(time(NULL));
-    suma=0;
-    ofstream zapis("wynik.dat");
-    {
-    for (int i=0;i<x;i++)
-    {
-    cout<<" To twoja "<<i+1<<" liczba losowa ";
-    a=rand()/float(RAND_MAX);
-    cout<<a<<endl;
-    suma=suma+a;
-    b++;
-    zapis<<a<<" "<<i<<endl;
-    }
-    cout<<"A srednia z nich wynosi: "<<suma/b<<endl;
-    }
-
-
+        remove("wynik.dat");
+        zapisz(10);
+        zapisz(15);
+        zapisz(20);
+        zapisz(200);
+        zapisz(5000);
+    //cout<<a<<" "<<i<<endl;
 
 return 0;}
 

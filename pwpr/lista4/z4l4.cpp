@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <time.h>
 using namespace std;
-int liczba, zgadnij,proby=0,jeszcze=0, y=100;
+int liczba, zgadnij,proby=0,jeszcze=0, y=5;
 int main()
 {
     cout<<"\x1b[7m------------------------------------------------\x1b[0m"<<endl;
@@ -45,10 +45,11 @@ while(jeszcze!=1)
         }
 
     }
-cout<<"czy chcesz zagrac jeszcze raz?(0 tak 1 nie)";
+cout<<"czy chcesz zagrac jeszcze raz?(1 nie, kazda inna tak)";
 cin>>jeszcze;
+if (jeszcze!=1){
 cout<<"czy chcesz zwiekszysc zakres liczb? (podaj od 0 do 100000000000000000000)";
-cin>>y;
+cin>>y;}
         }
     system("pause");
 return 0;}

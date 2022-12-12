@@ -17,13 +17,13 @@ void abcd(int x, int y)
 }
 int abcy(int x, float y, float z)
 {
-    cout<<x*y*z<<endl;
-    return(x*y*z);
+int iloczyn=x*y*z;
+    return iloczyn;
 }
 int tablica(int x[], int y)
 {
     int iloczyn=1;
-    for (int i=1; i<y; i++)
+    for (int i=0; i<y; i++)
     {
         iloczyn*=x[i];
     }

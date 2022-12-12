@@ -26,7 +26,7 @@ void setup()
 }
 void rysuj()
 {
-    system("clear");//system("clear");
+    system("clear");//system("cls");
     cout<<"witaj w prostym snake Karola!"<<endl;
     for (int i=0; i<width+1; i++)
         cout << "=";
