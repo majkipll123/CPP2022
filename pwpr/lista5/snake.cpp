@@ -7,8 +7,8 @@
 #include <iostream>
 using namespace std;
 bool koniecgry;
-const int width = 20;
-const int height = 20;
+const int width = 33;
+const int height = 33;
 int x, y, ox, oy, punkty;
 int tailX[100], tailY[100];
 int No;
