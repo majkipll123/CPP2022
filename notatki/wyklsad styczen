@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+#include<algorithm>
+int main()
+{
+std::vector<int> liczby;
+liczby.push_back(5);
+liczby.push_back(3);
+liczby.pop_back();
+liczby.push_back(1);
+liczby.push_back(9);
+std::cout<<liczby[1];
+
+std::vector<int> liczby{124,2,24,1}
+sort(liczby.begin itd)
+
+
+
+return 0;}
