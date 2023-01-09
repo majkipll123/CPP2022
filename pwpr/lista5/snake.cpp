@@ -8,8 +8,8 @@
 #include <iostream>
 using namespace std;
 bool koniecgry;
-const int width = 33;
-const int height = 33;
+const int width = 20;
+const int height = 20;
 int x, y, ox, oy, punkty;
 int tailX[100], tailY[100];
 int No;
@@ -155,7 +155,7 @@ int main()
         rysuj();
         input();
         logika();
-        chrono::milliseconds timespan(90);
+        chrono::milliseconds timespan(150);
         this_thread::sleep_for(timespan);
     }
 

@@ -4,8 +4,8 @@
 int main()
 {
    int jestkolo=1;
-   sf::RenderWindow okno(sf::VideoMode(800,600),"giga sraka");
-   sf::CircleShape kolo(400.0f);
+   sf::RenderWindow okno(sf::VideoMode(800,600),"moje kolo");
+   sf::CircleShape kolo(150.0f);
    kolo.setFillColor(sf::Color::Red);
    //w jaki sposob obslugiwac okno???????????? a=1-a gdzie a =1 to bedzie sei zamieniac ciagle
    while(okno.isOpen())

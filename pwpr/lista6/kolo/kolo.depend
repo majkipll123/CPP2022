@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1673169773 source:/home/majkipll13/Documents/CPP2022/pwpr/lista6/kolo/main.cpp
+1673256136 source:/home/majkipll13/Documents/CPP2022/pwpr/lista6/kolo/kolo2.cpp
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 
-1673170032 source:/home/majkipll13/Documents/CPP2022/pwpr/lista6/kolo/kolo2.cpp
+1673262507 source:/home/majkipll13/Documents/CPP2022/pwpr/lista6/kolo/main.cpp
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 

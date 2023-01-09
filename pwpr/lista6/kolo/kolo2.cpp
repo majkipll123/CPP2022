@@ -4,7 +4,7 @@
 int main()
 {
    int jestkolo=1;
-   sf::RenderWindow okno(sf::VideoMode(800,600),"giga sraka");
+   sf::RenderWindow okno(sf::VideoMode(800,600),"moje okno");
    sf::CircleShape kolo(400.0f);
    kolo.setFillColor(sf::Color::Red);
    //w jaki sposob obslugiwac okno???????????? a=1-a gdzie a =1 to bedzie sei zamieniac ciagle
