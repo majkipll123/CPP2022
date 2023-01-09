@@ -40,6 +40,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="cb.bmp" />
+		<Unit filename="kolo2.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

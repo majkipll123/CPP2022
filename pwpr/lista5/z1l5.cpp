@@ -4,8 +4,8 @@ using namespace std;
 float BMI(float a, int b)
 {
     float bmi;
-    cout<<a<<endl;
-    cout<<b<<endl;
+    //cout<<a<<endl;
+    //cout<<b<<endl;
     bmi=b/(a*a);
     return bmi;
 }
