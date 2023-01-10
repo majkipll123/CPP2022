@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1673262259 source:/home/majkipll13/Documents/CPP2022/pwpr/lista7/z1/test/main.cpp
+1673380992 source:/home/majkipll13/Documents/CPP2022/pwpr/lista7/z1/test/main.cpp
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
+	<iostream>
 
