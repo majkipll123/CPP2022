@@ -38,8 +38,8 @@
             dy[i]=vy;//*g*t;
             kolka[i] =sf::CircleShape(np[i]);
             kolka[i].setPosition(x+x*(rand()/(float)RAND_MAX),y+y*(rand()/(float)RAND_MAX));
-            R[i]=20*(rand()/(float)RAND_MAX);
-            G[i]=200*(rand()/(float)RAND_MAX);
+            R[i]=200*(rand()/(float)RAND_MAX);
+            G[i]=20*(rand()/(float)RAND_MAX);
             B[i]=200*(rand()/(float)RAND_MAX);
             kolka[i].setFillColor(sf::Color(R[i],B[i],G[i]));
            // pr[i]=1/i;
