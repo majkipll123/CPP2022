@@ -1,25 +1,30 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <SFML/System/Vector2.hpp>
+#include <SFML/System/Vector3.hpp>
     const int N=10;
     int szerokosc=800;
     int wysokosc=600;
     int promien=100;
     int keyonoff=1;
-    float g=9.81;
+    float g=0.81;
     int R[N];
     int G[N];
     int B[N];
     int x=(szerokosc/2)-promien;
     int y=(wysokosc/2)-promien;
     int d=2*promien;
-    float vx=1;
-    float vy=1;
+    float vx=0.01;
+    float vy=0.02;
     float dx[N];
     float dy[N];
     int np[N];
     //float pr[N];
-    sf::CircleShape kolka[N];
+    //const float maxY=50.f;
+    //const sf::Vector2f gravity(0,g);
+    //sf::Vector2f velocity(vx, vy);
+    //sf::CircleShape kolka[N];
 
 
     void init()
@@ -51,7 +56,11 @@ void przesun(float &Px, float &Py,sf::CircleShape &przes,int nb)
                       Px=Px*(-1); // juz jest wszystko tak
         if (k+(2*nb)==wysokosc || k == 0)
                       Py=Py*(-1);
-        przes.move(Px,Py);
+        if(k>400)
+        {
+            przes.move(velocity);
+            if(velocity.y < maxY) velocity += gravity;
+        }
 }
 
 int main()
