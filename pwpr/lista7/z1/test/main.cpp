@@ -3,7 +3,7 @@
 #include <iostream>
 #include <SFML/System/Vector2.hpp>
 #include <SFML/System/Vector3.hpp>
-    const int N=10;
+    const int N=15;
     int szerokosc=800;
     int wysokosc=600;
     int promien=100;
@@ -15,8 +15,8 @@
     int x=(szerokosc/2)-promien;
     int y=(wysokosc/2)-promien;
     int d=2*promien;
-    float vx=0.01;
-    float vy=0.02;
+    float vx=0.08;
+    float vy=0.04;
     float dx[N];
     float dy[N];
     int np[N];
@@ -24,7 +24,7 @@
     //const float maxY=50.f;
     //const sf::Vector2f gravity(0,g);
     //sf::Vector2f velocity(vx, vy);
-    //sf::CircleShape kolka[N];
+    sf::CircleShape kolka[N];
 
 
     void init()
@@ -33,11 +33,12 @@
         {
           //  for(int t=1;t<=N;t++){
             np[i]=promien*(rand()/(float)RAND_MAX);
-            dx[i]=vx;//*g*t;
+
+            dx[i]=vx*(rand()/(float)RAND_MAX);;//*g*t;
             dy[i]=vy;//*g*t;
             kolka[i] =sf::CircleShape(np[i]);
             kolka[i].setPosition(x+x*(rand()/(float)RAND_MAX),y+y*(rand()/(float)RAND_MAX));
-            R[i]=200*(rand()/(float)RAND_MAX);
+            R[i]=20*(rand()/(float)RAND_MAX);
             G[i]=200*(rand()/(float)RAND_MAX);
             B[i]=200*(rand()/(float)RAND_MAX);
             kolka[i].setFillColor(sf::Color(R[i],B[i],G[i]));
@@ -46,21 +47,32 @@
         }
     }
 
-void przesun(float &Px, float &Py,sf::CircleShape &przes,int nb)
+void przesun(float &Px, float &Py,sf::CircleShape &przes,int nb,
+int &R, int &G, int &B)
 {
+        int py=Py;
         //Py=Py+vx*prs;
         //std::cout<<przes.getPosition().x<<std::endl;
         int l= przes.getPosition().x;
         int k= przes.getPosition().y;
         if (l+(2*nb)==szerokosc || l == 0)
                       Px=Px*(-1); // juz jest wszystko tak
+
         if (k+(2*nb)==wysokosc || k == 0)
                       Py=Py*(-1);
-        if(k>400)
-        {
-            przes.move(velocity);
-            if(velocity.y < maxY) velocity += gravity;
-        }
+        else Py=Py+0.00001;
+        if (Py>0.9) Py=0.01;
+        R=20*Py;
+        G=200*Py;
+        B=200*Py;
+           // if py>Py }
+        //keypressed?else Py=Py+0.001;
+        //else
+        std::cout<<Py<<std::endl;
+        //while(true){
+            przes.move(Px,Py);
+            //if(k<=400)Py =- ;
+                //}
 }
 
 int main()
@@ -88,7 +100,7 @@ int main()
 
         }
         for(int i=0;i<N;i++)
-            przesun(dx[i],dy[i],kolka[i],np[i]);
+            przesun(dx[i],dy[i],kolka[i],np[i],R[i],G[i],B[i]);
 
         window.clear(sf::Color::Black);
         if(keyonoff)
