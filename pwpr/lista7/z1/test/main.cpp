@@ -1,8 +1,7 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <SFML/System/Vector2.hpp>
-#include <SFML/System/Vector3.hpp>
+
     const int N=15;
     int szerokosc=800;
     int wysokosc=600;
@@ -34,8 +33,8 @@
           //  for(int t=1;t<=N;t++){
             np[i]=promien*(rand()/(float)RAND_MAX);
 
-            dx[i]=vx*(rand()/(float)RAND_MAX);;//*g*t;
-            dy[i]=vy;//*g*t;
+            dx[i]=vx*(rand()/(float)RAND_MAX);//*g*t;
+            dy[i]=vy*(rand()/(float)RAND_MAX);//*g*t;
             kolka[i] =sf::CircleShape(np[i]);
             kolka[i].setPosition(x+x*(rand()/(float)RAND_MAX),y+y*(rand()/(float)RAND_MAX));
             R[i]=200*(rand()/(float)RAND_MAX);
