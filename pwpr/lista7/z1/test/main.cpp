@@ -7,7 +7,7 @@
     int wysokosc=600;
     int promien=100;
     int keyonoff=1;
-    float g=0.81;
+    float g=0.0001;
     int R[N];
     int G[N];
     int B[N];
@@ -59,7 +59,7 @@ int &R, int &G, int &B)
 
         if (k+(2*nb)==wysokosc || k == 0)
                       Py=Py*(-1);
-        else Py=Py+0.00001;
+        else Py=Py+g;
         if (Py>0.9) Py=0.01;
         R=20*Py;
         G=200*Py;
