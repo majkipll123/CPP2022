@@ -1,0 +1,9 @@
+    int szerokosc=800;
+    int wysokosc=600;
+    int keyonoff=1;
+    float g=0.0001;
+    int kd=0;
+    int ka=0;
+    int N=5;
+    int szp=45;
+    sf::CircleShape pilka(50);

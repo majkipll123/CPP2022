@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1673865099 source:/home/majkipll123/Documents/Github/CPP2022/pwpr/lista8/gra/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+

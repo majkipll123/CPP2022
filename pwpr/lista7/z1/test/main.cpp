@@ -7,16 +7,17 @@
     int wysokosc=600;
     int promien=100;
     int keyonoff=1;
-    float g=0.0001;
+    float g=0.000005;
     int R[N];
     int G[N];
     int B[N];
-    int x=(szerokosc/2)-promien;
-    int y=(wysokosc/2)-promien;
+    float x=(szerokosc/2)-promien;
+    float y=(wysokosc/2)-promien;
     int d=2*promien;
     float vx=0.08;
-    float vy=0.04;
+    float vy=0.05;
     float dx[N];
+
     float dy[N];
     int np[N];
     //float pr[N];
@@ -67,7 +68,7 @@ int &R, int &G, int &B)
            // if py>Py }
         //keypressed?else Py=Py+0.001;
         //else
-        std::cout<<Py<<std::endl;
+        //std::cout<<Py<<std::endl;
         //while(true){
             przes.move(Px,Py);
             //if(k<=400)Py =- ;
@@ -101,7 +102,7 @@ int main()
         for(int i=0;i<N;i++)
             przesun(dx[i],dy[i],kolka[i],np[i],R[i],G[i],B[i]);
 
-        window.clear(sf::Color::Black);
+        window.clear(sf::Color::Red);
         if(keyonoff)
         {
             for(int i=0;i<N;i++)
