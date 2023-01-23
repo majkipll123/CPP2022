@@ -1,7 +1,7 @@
-//gra pinball w sfml 
+//gra pinball w sfml
 #include <SFML/Graphics.hpp>
 #include <iostream>
-int n=3;
+const int n=3;
 int startx =500; //startowa pozycja pilki
 int starty = 700; //startowa pozycja pilki
 int wysokosc = 600; //wysokosc okna
@@ -37,18 +37,18 @@ void init()
 
 void rysuj(pil,prze)
 {
-    window.draw(pilka);
-    window.draw(przeszkoda);
+    window.draw(pil);
+    window.draw(prze);
 }
 
 int main()
 {
     pilka();
     przeszkody();
-   
-    
-    
-	
+
+
+
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -72,11 +72,11 @@ int main()
             }
         }
 
-        
+
         window.clear();
 
-        
-        rysuj();
+
+        rysuj(pilka,przeszkoda);
 
         // Update the window
         window.display();

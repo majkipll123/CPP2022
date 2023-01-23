@@ -11,10 +11,7 @@ void animuj();
 {
     for(int i=0;i<N;i++)
     {
-        x1[i]+=4*(rand()/float(RAND_MAX));
-        y1[i]+=4*(rand()/float(RAND_MAX));
-        y2[i]+=4*(rand()/float(RAND_MAX));
-        x2[i]+=4*(rand()/float(RAND_MAX));
+        x1[i]=4*(rand()/float(RAND_MAX)-0.5);
     }
 }
 void generuj()

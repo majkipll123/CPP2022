@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1674136303 source:/home/majkipll123/Documents/Github/CPP2022/pwpr/lista8/test/main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<iostream>
+
