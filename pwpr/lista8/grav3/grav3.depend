@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1674466939 source:/home/majkipll123/Documents/Github/CPP2022/pwpr/lista8/grav3/main.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<SFML/Network.hpp>
+

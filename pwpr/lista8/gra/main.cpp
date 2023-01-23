@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-        
+
 
 
 int main()
@@ -37,13 +37,13 @@ int main()
                         if(event.type == sf::Event::Closed)
                                 window.close();
 
-                        if(isSpriteHover(sprite.getGlobalBounds(), sf::Vector2f(event.mouseButton.x, event.mouseButton.y)) == true)
-         {
-                if(event.type == sf::Event::MouseButtonReleased &&  event.mouseButton.button == sf::Mouse::Left)
-                {
-                        window.create(sf::VideoMode(400, 200),"The button worked!");
-                }
-         }
+        //                if(isSpriteHover(sprite.getGlobalBounds(), sf::Vector2f(event.mouseButton.x, event.mouseButton.y)) == true)
+       //  {
+        //        if(event.type == sf::Event::MouseButtonReleased &&  event.mouseButton.button == sf::Mouse::Left)
+        //        {
+        //                window.create(sf::VideoMode(400, 200),"The button worked!");
+         //       }
+        // }
 
              }
                 window.clear(sf::Color::Black);
