@@ -28,7 +28,7 @@ logika();
     //kolizja z dolnym brzegiem odejmuje zycie
     //kolizja z gornym brzegiem dodaje zycie
     //brak zycia konczy gre
-
+    
 
 }
 //bool do sprawdzania czy mysz jest nad przyciskiem
